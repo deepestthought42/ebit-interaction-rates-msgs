@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package InteractionRates;
+
+message Index {
+    required int32 A = 1;
+    required int32 Z = 2;
+    required int32 q = 3;
+    required int32 i = 4;
+}
+
+
+message Rate {
+    required double RateInHz  = 1;
+    required string Description = 2;
+    required Index origin = 3;
+    required Index destination = 4;
+}
+
+
+message RateList {
+    repeated Rate rates = 1;
+}
