@@ -26,4 +26,5 @@ message Rate {
 
 message RateList {
     repeated Rate rates = 1;
+    int32 dimension = 2;
 }
